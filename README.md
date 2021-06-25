@@ -1,11 +1,10 @@
 Untuk mengakses aplikasi, harus menyalakan brokernya terlebih dahulu
 
-
 Buka Command Prompt, lalu akses ke direktori di tempat menginstall mosquitto, misalnya : C:\Program Files\mosquitto
 
+Pastikan sudah menginstall mosquittonya terlebih dahulu, jika belum maka bisa download di https://mosquitto.org/download/ 
 
 Untuk menyalakan brokernya, kita disini akan menyalakan 3 broker dengan port 2222 , 3333 , 4444 
-
 
 Maka dari itu, masukan perintah sebagai berikut : 
 
@@ -14,7 +13,6 @@ Maka dari itu, masukan perintah sebagai berikut :
 **mosquitto.exe -p 3333 (untuk akses ke Laundry Soang)**
 
 **mosquitto.exe -p 4444 (untuk akses ke Perbandingan Waktu)**
-
 
 Kita akan membuka client_subscribe.py terlebih dahulu sebagai akses main menunya, maka dari itu, buka direktori dimana tempat codingan disimpan, masukan perintah pada cmd sebagai berikut : 
 
@@ -109,6 +107,8 @@ Berikut adalah hasil perbandingan dari kedua laundry tersebut berdasarkan berat 
 Untuk pilihan no 4, disini program memutuskan untuk berhenti beroperasi, berikut adalah hasilnya : 
 
 ![image](https://user-images.githubusercontent.com/62027487/123383594-93caaa80-d5bd-11eb-86c0-75a81be6ca34.png)
+
+Note : Periksa pada library yang telah ditentukan, jika muncul error ketika akan menjalankan, misalnya jika paho.mqtt belum diinstall maka cukup ketik di cmd **"pip install paho-mqtt"**
 
 
 
